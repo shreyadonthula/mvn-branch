@@ -28,10 +28,7 @@ pipeline{
             steps{
                 script{
                    echo  'started git checkout...'
-			gitcheckout(
-				branch:'master',
-				url:'https://github.com/shreyadonthula/mvn-branch.git'
-			)
+			
                 }
             }   
         }
