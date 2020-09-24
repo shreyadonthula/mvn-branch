@@ -24,14 +24,7 @@ pipeline{
             }   
         }
 
-	 stage("Git checkout SCM"){
-            steps{
-                script{
-                   echo  'started git checkout...'
-			
-                }
-            }   
-        }
+	
 	 stage("Stages"){
             steps{
                
