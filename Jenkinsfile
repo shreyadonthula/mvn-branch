@@ -19,7 +19,7 @@ pipeline{
 	 stage("Package"){
             steps{
                 script{
-                    packaging.package()
+                    packaging()
                 }
             }   
         }
