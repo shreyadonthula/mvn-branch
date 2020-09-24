@@ -2,6 +2,16 @@
 pipeline{
     agent any
     stages{
+	  stage('Git Checkout SCM') {
+            steps{
+               
+                gitcheckout(
+                    branch: "master",
+                    url: "https://github.com/shreyadonthula/mvn-branch.git"
+                )
+            }
+        } 
+	    
          stage("build"){
             steps{
                 script{
@@ -23,7 +33,7 @@ pipeline{
                 }
             }   
         }
-
+		
 	
 	 stage("Stages"){
             steps{
